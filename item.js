@@ -62,7 +62,7 @@ const items = [{
 },
 {
     id:'008',
-    Image :'Site Files/Necklace4.jpg',
+    Image :'Site Files/NeckLace4.jpg',
     name :'Pearls Choker NeckLace',
     currentPrice : 395200,
     originalPrice : 416000,

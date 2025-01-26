@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+.current-price{
+    font-weight: 600;
+}
+.discount-percentage{
+    color: rgb(255, 0, 0);
+}
+.bag-page{
+    width: 80%;
+    margin-left: 12.5%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}  
+.bag-summary{
+    vertical-align: top;
+    display: inline-block;
+    width: 30%;
+    padding: 24px 0 0 16px;
+    color: #282c3f;
+    font-size: 13px;
+    line-height: 1.42857143;
+}  
+.bag-details-container {
+    margin-bottom: 16px;
+  }
+.price-item-tag , .price-item-value{
+    color: #282c3f;
+    font-size: 13px;
+    font-weight: 600;
+}
+.price-header{
+    font-size: 12px;
+    font-weight: 700;
+    margin: 24px 0 16px;
+    color: #535766;
+} 
+.price-item{
+    margin-bottom: 12px;
+    line-height: 16px;
+    font-size: 14px;
+    color: #282c3f;
+} 
+.price-item-value{
+    float: right;
+}
+.priceDetail-base-discount{
+    color: #03a685;
+}
+.price-footer{
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 16px;
+    border-top: 1px solid #eaeaec;
+    color: #3e4152;
+    line-height: 16px;
+}
+.btn-place-order{
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 2px;
+    border-width: 0px;
+    padding: 10px 16px;
+    background-color: rgb(255, 63, 108);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+.bag-item-container{
+    margin-bottom: 8px;
+    background: #fff;
+    font-size: 14px;
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    position: relative;
+    padding: 12px 12px 0;
+}  
+.bag-items-container{
+    width: 65%;
+}
+.item-left-part{
+    position: absolute;
+    background: rgb(255, 242, 223);
+    height: 148px;
+    width: 111px;
+}
+.item-right-part{
+    padding-left: 12px;
+    position: relative;
+    min-height: 148px;
+    margin-left: 111px;
+    margin-bottom: 12px;
+}
+.bag-item-img{
+    width: 100%;
+    height: 148px;  
+    object-fit: cover;
+}
+.return-period{
+    display: inline-flex;
+    font-size: 14px;
+    padding-top: 8px;
+}
+.return-period-days{
+    font-weight: 700;
+    margin-right: 4px;
+}
+.delivery-details{
+    margin-top: 5px;
+    color: #282c3f;
+    font-size: 12px;
+    letter-spacing: -.1px;
+    margin-bottom: 8px;
+    line-height: 15px;
+}
+.delivery-details-days{
+    color: #03a685;
+}
+.remove-from-cart{
+    position: absolute;
+    font-size: 25px;
+    top: 10px;
+    right: 18px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+.company{
+    font-weight: 700;
+}
+ 
+/************** TABLET DEVICE START  ****************/
+
+@media only screen and (min-width: 768px) and (max-width:1200px){
+    .bag-page{
+       width: 100%;
+       margin-left: 0%;
+       margin-top: 2%;
+    }  
+    .bag-item-img{
+        width: 100%;
+    }
+    .current-price{
+        font-weight: 600;
+    }
+    .original-price{
+        margin-left: 3px;
+    }
+    .remove-from-cart{
+        font-size: 25px;
+        top: 0px;
+        right: 6px;  
+    }
+    .bag-summary{
+        width: 30%;
+    }        
+    .btn-place-order{
+        width: 98%;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .bag-item-count{
+        left: 10px;
+        top: -55px;
+    }  
+}
+
+/************** TABLET DEVICE END  ****************/
+
+
+
+/************** MOBILE DEVICE START  ****************/
+
+@media only screen and (min-width: 320px) and (max-width:767px){
+    .bag-page{
+        width: 100%;
+        margin-left: 0%;
+    }  
+    .bag-items-container{
+        width: 100%;
+    }
+    .bag-item-img{
+        width: 100%;
+        height: 148px;  
+        object-fit: cover;
+    }
+    .current-price{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .discount-percentage{
+        color: rgb(255, 0, 0);
+        font-size: 12px;
+    }
+    .original-price{
+        margin-left: 0px;
+    }
+    .return-period{
+        display: inline-flex;
+        font-size: 14px;
+        padding-top: 8px;
+    }
+    .return-period-days{
+        font-weight: 700;
+        margin-right: 4px;
+    }
+    .remove-from-cart{
+        font-size: 20px;
+        top: 3px;
+        right: 6px;  
+    }
+    .bag-summary{
+        width: 98%;
+    }        
+    .btn-place-order{
+        width: 98%;
+    }
+    .bag-section i {
+        margin-left: 20px;
+    }
+    .bag-section span {
+        margin-left: 15px;
+    }
+    .bag-item-count{
+        left: 10px;
+        top: -40px;
+        font-size: 8px;
+        height: 8px;
+    }
+}
+
+/************** MOBILE DEVICE END  ****************/
+
+@media only screen and (min-width: 1338px) and (max-width:1500px){
+    .bag-item-count{
+        left: -30px;
+        top: -35px;
+    }
+}
